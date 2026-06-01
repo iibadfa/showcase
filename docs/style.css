@@ -14,8 +14,12 @@ h1 {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
-  margin-bottom: 1.75rem;
+  margin-bottom: 1.25rem;
   align-items: start;
+}
+
+.instance-row {
+  margin-bottom: 2rem;
 }
 
 h2 {
@@ -31,8 +35,50 @@ video {
   background: #000;
 }
 
+.transcript-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.transcript-card {
+  border: 1px solid transparent;
+  border-radius: 6px;
+  padding: 0.85rem 1rem;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.88rem;
+  line-height: 1.45;
+}
+
+.transcript-card h3 {
+  margin: 0 0 0.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 0;
+}
+
+.transcript-card p {
+  margin: 0;
+}
+
+.transcript-ground-truth {
+  grid-column: 1 / -1;
+  background: #eaf4ff;
+  border-color: #b7d8f5;
+}
+
+.transcript-hypothesis {
+  background: #fff7e6;
+  border-color: #f1d49b;
+}
+
 @media (max-width: 700px) {
-  .video-row {
+  .video-row,
+  .transcript-grid {
     grid-template-columns: 1fr;
+  }
+
+  .transcript-ground-truth {
+    grid-column: auto;
   }
 }
