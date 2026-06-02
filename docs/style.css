@@ -8,6 +8,7 @@ body {
 
 h1 {
   margin-bottom: 1.5rem;
+  text-align: center;
 }
 
 .video-row {
@@ -26,6 +27,11 @@ h2 {
   margin: 0 0 0.5rem;
   font-size: 1rem;
   overflow-wrap: anywhere;
+}
+
+.chapter-title {
+  margin: 2.25rem 0 1rem;
+  font-size: 1.35rem;
 }
 
 video {
