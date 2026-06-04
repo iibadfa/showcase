@@ -19,6 +19,16 @@ h1 {
   align-items: start;
 }
 
+.single-video {
+  margin: 2rem 0;
+}
+
+.video-caption {
+  margin: 0.65rem 0 0;
+  color: #333;
+  font-size: 0.95rem;
+}
+
 .instance-row {
   margin-bottom: 2rem;
 }
@@ -76,6 +86,21 @@ video {
 .transcript-hypothesis {
   background: #fff7e6;
   border-color: #f1d49b;
+}
+
+.references {
+  margin-top: 2.5rem;
+  border-top: 1px solid #ddd;
+  padding-top: 1rem;
+}
+
+.references ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.references a {
+  color: #125c9c;
 }
 
 @media (max-width: 700px) {
